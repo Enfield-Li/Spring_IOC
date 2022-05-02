@@ -75,6 +75,15 @@ public class Student implements Person {
 
   @Override
   public void printInfo() {
-    System.out.println("name is: " + this.name + " score in " + this.mathScore);
+    System.out.println("name is: " + this.name);
+  }
+
+  public void printScore() {
+    System.out.println(
+      "Subject is: " +
+      this.mathScore.getSubject() +
+      " and scoring: " +
+      this.mathScore.getPoints()
+    );
   }
 }

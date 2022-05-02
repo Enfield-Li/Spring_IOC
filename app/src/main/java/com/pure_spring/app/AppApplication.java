@@ -21,5 +21,6 @@ public class AppApplication {
     Student student = appContext.getBean("student", Student.class);
 
     student.printInfo();
+    student.printScore();
   }
 }
