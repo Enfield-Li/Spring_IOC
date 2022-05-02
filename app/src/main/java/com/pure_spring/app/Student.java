@@ -5,10 +5,10 @@ public class Student implements Person {
   private Long id;
   private String name;
 
-  // public Student(Long id, String name) {
-  //   this.id = id;
-  //   this.name = name;
-  // }
+  public Student(Long id, String name) {
+    this.id = id;
+    this.name = name;
+  }
 
   public void setId(Long id) {
     this.id = id;
