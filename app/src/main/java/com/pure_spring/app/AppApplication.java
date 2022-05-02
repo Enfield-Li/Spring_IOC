@@ -21,10 +21,6 @@ public class AppApplication {
       args
     );
 
-    AnnotationConfigApplicationContext annoContext = new AnnotationConfigApplicationContext(
-      "com.pure_spring.app.SchoolConfig"
-    );
-
     School school = configContext.getBean("schoolBean", School.class);
     school.test();
   }
