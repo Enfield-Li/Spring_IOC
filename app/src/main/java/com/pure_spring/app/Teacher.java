@@ -1,13 +1,13 @@
 package com.pure_spring.app;
 
-public class Student implements Person {
+public class Teacher implements Person {
 
   private Long id;
   private String name;
 
-  public Student() {} // create an instance ie. new Student()
+  public Teacher() {} // create an instance ie. new Student()
 
-  public Student(Long id, String name) {
+  public Teacher(Long id, String name) {
     this.id = id;
     this.name = name;
   }
@@ -22,6 +22,6 @@ public class Student implements Person {
 
   @Override
   public void printName() {
-    System.out.println("Student name is: " + this.name + " and id: " + this.id);
+    System.out.println("Teacher name is: " + this.name + " and id: " + this.id);
   }
 }

@@ -5,14 +5,19 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="person" class="com.pure_spring.app.Student">
+    <bean id="person" class="com.pure_spring.app.Teacher">
         <constructor-arg type="Long" name="id" value="11"></constructor-arg>
-        <constructor-arg type="String" name="name" value="StdName1"></constructor-arg>
+        <constructor-arg type="String" name="name" value="name1"></constructor-arg>
     </bean>
 
-    <bean id="student" class="com.pure_spring.app.Student">
+    <!-- <bean id="student" class="com.pure_spring.app.Student">
         <property name="id" value="33"></property>
-        <property name="name" value="name3"></property>
+        <property name="name" value="student name"></property>
     </bean>
+
+    <bean id="teacher" class="com.pure_spring.app.Teacher">
+        <property name="id" value="101"></property>
+        <property name="name" value="teacher name"></property>
+    </bean> -->
 
 </beans>
