@@ -2,10 +2,16 @@ package com.pure_spring.app;
 
 public class Student implements Person {
 
+  private Long id;
   private String name;
 
-  public Student(String name) {
-    this.name = name;
+  // public Student(Long id, String name) {
+  //   this.id = id;
+  //   this.name = name;
+  // }
+
+  public void setId(Long id) {
+    this.id = id;
   }
 
   public void setName(String name) {
@@ -14,6 +20,6 @@ public class Student implements Person {
 
   @Override
   public void printName() {
-    System.out.println(this.name);
+    System.out.println("name is: " + this.name + " and id: " + this.id);
   }
 }
