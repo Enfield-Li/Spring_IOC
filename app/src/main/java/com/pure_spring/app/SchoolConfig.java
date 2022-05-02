@@ -4,12 +4,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+// @Configuration
+// @ComponentScan(basePackages = "com.pure_spring.app.School")
 public class SchoolConfig {
-
-  @Bean
-  public School schoolBean() { // bean id
-    School school = new School();
-    return school;
-  }
+  //   @Bean(name = "")
+  //   public School schoolBean() { // bean id
+  //     School school = new School();
+  //     return school;
+  //   }
 }

@@ -21,7 +21,7 @@ public class AppApplication {
       args
     );
 
-    School school = configContext.getBean("schoolBean", School.class);
+    School school = configContext.getBean("school", School.class);
     school.test();
   }
 }
