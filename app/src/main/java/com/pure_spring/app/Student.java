@@ -1,12 +1,19 @@
 package com.pure_spring.app;
 
 import java.util.Objects;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Student implements Person {
 
   private String name;
 
   private Score mathScore;
+
+  @Autowired
+  public Student(Score mathScore) {
+    System.out.println("score autowired");
+    this.mathScore = mathScore;
+  }
 
   public Student() {}
 
