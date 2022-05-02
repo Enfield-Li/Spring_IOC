@@ -6,8 +6,8 @@
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="person" class="com.pure_spring.app.Student">
-        <constructor-arg type="Long" value="11"></constructor-arg>
-        <constructor-arg type="String" value="StdName1"></constructor-arg>
+        <constructor-arg type="Long" name="id" value="11"></constructor-arg>
+        <constructor-arg type="String" name="name" value="StdName1"></constructor-arg>
     </bean>
 
     <!-- <bean id="student" class="com.pure_spring.app.Student">
