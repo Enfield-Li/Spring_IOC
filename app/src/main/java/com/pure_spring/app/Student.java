@@ -92,11 +92,15 @@ public class Student implements Person {
   }
 
   public void printScore() {
-    System.out.println(
-      "Subject is: " +
-      this.mathScore.getSubject() +
-      " and scoring: " +
-      this.mathScore.getPoints()
-    );
+    if (this.mathScore != null) {
+      System.out.println(
+        "Subject is: " +
+        this.mathScore.getSubject() +
+        " and scoring: " +
+        this.mathScore.getPoints()
+      );
+    } else {
+      System.out.println("Score is null...");
+    }
   }
 }

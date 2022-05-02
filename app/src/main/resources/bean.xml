@@ -17,15 +17,20 @@
 
     
     <!-- InnerBean -->
-    <bean id="student" class="com.pure_spring.app.Student">
+    <bean id="student" class="com.pure_spring.app.Student"  autowire="constructor"> <!-- byName, byType -->
         <constructor-arg type="String" name="name" value="StdName1"></constructor-arg>
 
-        <constructor-arg type="Score" name="mathScore" >
+        <!-- <constructor-arg type="Score" name="mathScore" >
             <bean class="com.pure_spring.app.Score">
                 <property name="subject" value="math" />
                 <property name="points" value="99" />
             </bean>
-        </constructor-arg>
+        </constructor-arg> -->
+    </bean>
+    
+    <bean id="mathScore" class="com.pure_spring.app.Score">
+        <property name="subject" value="math" />
+        <property name="points" value="99" />
     </bean>
 
 

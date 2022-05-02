@@ -18,9 +18,8 @@ public class AppApplication {
       "bean.xml"
     );
 
-    // Student student = appContext.getBean("student", Student.class);
-
-    // student.printInfo();
-    // student.printScore();
+    Student student = appContext.getBean("student", Student.class);
+    student.printInfo();
+    student.printScore();
   }
 }
