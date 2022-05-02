@@ -2,16 +2,30 @@ package com.pure_spring.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @SpringBootApplication
 public class AppApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(AppApplication.class, args);
+    // ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
+    //   "bean.xml"
+    // );
+    // School school = appContext.getBean("school", School.class);
+    // System.out.println("xml: " + school);
 
-    ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
-      "bean.xml"
+    ConfigurableApplicationContext configContext = SpringApplication.run(
+      AppApplication.class,
+      args
     );
+
+    AnnotationConfigApplicationContext annoContext = new AnnotationConfigApplicationContext(
+      "com.pure_spring.app.SchoolConfig"
+    );
+
+    School school = configContext.getBean("schoolBean", School.class);
+    school.test();
   }
 }
