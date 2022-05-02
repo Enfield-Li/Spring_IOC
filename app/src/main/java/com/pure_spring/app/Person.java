@@ -1,5 +1,5 @@
 package com.pure_spring.app;
 
 public interface Person {
-  public void printName();
+  public void printInfo();
 }

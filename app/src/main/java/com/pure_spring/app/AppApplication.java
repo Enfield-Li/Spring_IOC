@@ -20,6 +20,6 @@ public class AppApplication {
 
     Student student = appContext.getBean("student", Student.class);
 
-    student.printName();
+    student.printInfo();
   }
 }

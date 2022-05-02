@@ -1,19 +1,80 @@
 package com.pure_spring.app;
 
+import java.util.Objects;
+
 public class Student implements Person {
 
   private String name;
 
-  public Student(String name) {
+  private Score mathScore;
+
+  public Student() {}
+
+  public Student(String name, Score mathScore) {
     this.name = name;
+    this.mathScore = mathScore;
+  }
+
+  public String getName() {
+    return this.name;
   }
 
   public void setName(String name) {
     this.name = name;
   }
 
+  public Score getMathScore() {
+    return this.mathScore;
+  }
+
+  public void setMathScore(Score mathScore) {
+    this.mathScore = mathScore;
+  }
+
+  public Student name(String name) {
+    setName(name);
+    return this;
+  }
+
+  public Student mathScore(Score mathScore) {
+    setMathScore(mathScore);
+    return this;
+  }
+
   @Override
-  public void printName() {
-    System.out.println(this.name);
+  public boolean equals(Object o) {
+    if (o == this) return true;
+    if (!(o instanceof Student)) {
+      return false;
+    }
+    Student student = (Student) o;
+    return (
+      Objects.equals(name, student.name) &&
+      Objects.equals(mathScore, student.mathScore)
+    );
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, mathScore);
+  }
+
+  @Override
+  public String toString() {
+    return (
+      "{" +
+      " name='" +
+      getName() +
+      "'" +
+      ", mathScore='" +
+      getMathScore() +
+      "'" +
+      "}"
+    );
+  }
+
+  @Override
+  public void printInfo() {
+    System.out.println("name is: " + this.name + " score in " + this.mathScore);
   }
 }
