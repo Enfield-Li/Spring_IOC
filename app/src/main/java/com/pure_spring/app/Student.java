@@ -10,6 +10,10 @@ public class Student implements Person {
 
   public Student() {}
 
+  public Student(String name) {
+    this.name = name;
+  }
+
   public Student(String name, Score mathScore) {
     this.name = name;
     this.mathScore = mathScore;

@@ -6,8 +6,8 @@
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="student" class="com.pure_spring.app.Student">
-        <!-- <constructor-arg type="String" name="name" value="StdName1"></constructor-arg> -->
-        <property name="name" value="stdName1"></property>
+        <constructor-arg type="String" name="name" value="StdName1"></constructor-arg>
+        <!-- <property name="name" value="stdName1"></property> -->
         <property name="mathScore" ref="mathScore"></property>
     </bean>
 
