@@ -18,7 +18,7 @@ public class AppApplication {
       "bean.xml"
     );
 
-    Student student = appContext.getBean("student", Student.class);
+    Person student = appContext.getBean("person", Person.class);
 
     student.printName();
   }
