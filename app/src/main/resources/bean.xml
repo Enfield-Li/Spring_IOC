@@ -7,12 +7,13 @@
 
     <bean id="student" class="com.pure_spring.app.Student">
         <constructor-arg type="String" name="name" value="StdName1"></constructor-arg>
-        <!-- <property name="name" value="stdName1"></property> -->
-        <property name="mathScore" ref="mathScore"></property>
+        <constructor-arg type="Score" name="mathScore" ref="mathScore"></constructor-arg>
+        <!-- <property name="name" value="stdName1" />
+        <property name="mathScore" ref="mathScore" /> -->
     </bean>
 
     <bean id="mathScore" class="com.pure_spring.app.Score">
-        <property name="subject" value="math"></property>
+        <property name="subject" value="math" />
         <property name="points" value="99" />
     </bean>
 

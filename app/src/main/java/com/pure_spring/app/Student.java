@@ -11,10 +11,17 @@ public class Student implements Person {
   public Student() {}
 
   public Student(String name) {
+    System.out.println("Student constructor injecting name: " + name);
     this.name = name;
   }
 
   public Student(String name, Score mathScore) {
+    System.out.println(
+      "Student constructor injecing name: " +
+      name +
+      " and mathScore: " +
+      mathScore
+    );
     this.name = name;
     this.mathScore = mathScore;
   }
@@ -24,7 +31,7 @@ public class Student implements Person {
   }
 
   public void setName(String name) {
-    System.out.println("Student name: " + name);
+    System.out.println("Student setter injecting name: " + name);
     this.name = name;
   }
 
