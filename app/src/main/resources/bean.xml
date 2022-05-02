@@ -10,9 +10,9 @@
         <constructor-arg type="String" name="name" value="StdName1"></constructor-arg>
     </bean>
 
-    <!-- <bean id="student" class="com.pure_spring.app.Student">
+    <bean id="student" class="com.pure_spring.app.Student">
         <property name="id" value="33"></property>
         <property name="name" value="name3"></property>
-    </bean> -->
+    </bean>
 
 </beans>

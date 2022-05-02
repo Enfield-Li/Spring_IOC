@@ -5,6 +5,8 @@ public class Student implements Person {
   private Long id;
   private String name;
 
+  public Student() {} // create an instance ie. new Student()
+
   public Student(Long id, String name) {
     this.id = id;
     this.name = name;
