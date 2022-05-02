@@ -2,14 +2,12 @@ package com.pure_spring.app;
 
 import org.springframework.stereotype.Component;
 
-// @Component
 public class School {
 
   private Principal pricipal;
   private Teacher teacher;
 
   // constructor injection
-
   // public School(Principal principal) {
   //   this.pricipal = principal;
   // }
