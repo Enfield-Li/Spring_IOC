@@ -20,6 +20,7 @@ public class Student implements Person {
   }
 
   public void setName(String name) {
+    System.out.println("name: " + name);
     this.name = name;
   }
 
@@ -28,6 +29,7 @@ public class Student implements Person {
   }
 
   public void setMathScore(Score mathScore) {
+    System.out.println("score: " + mathScore);
     this.mathScore = mathScore;
   }
 
