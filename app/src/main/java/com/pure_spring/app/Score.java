@@ -17,7 +17,7 @@ public class Score {
   }
 
   public void setSubject(String subject) {
-    System.out.println("Score subject: " + subject);
+    // System.out.println("Score subject: " + subject);
     this.subject = subject;
   }
 
@@ -26,7 +26,7 @@ public class Score {
   }
 
   public void setPoints(Integer points) {
-    System.out.println("Score points: " + points);
+    // System.out.println("Score points: " + points);
     this.points = points;
   }
 

@@ -33,5 +33,10 @@
         <property name="points" value="99" />
     </bean>
 
+    <bean id="otherScore" class="com.pure_spring.app.Score">
+        <property name="subject" value="other" />
+        <property name="points" value="90" />
+    </bean>
+
 
 </beans>
